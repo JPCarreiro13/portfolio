@@ -94,3 +94,23 @@
 }
 
 /* EXCEPTIONS */
+
+.logo {
+    display: block;
+    width: 100%;
+    color: $white;
+    width: fit-content;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+    
+
+    &:hover{
+        color: $black;
+        transition: .1s ease-in-out;
+    }
+    &:focus,
+    &:active {
+        color: $black;
+        transition: .1s ease-in-out;
+    }
+}
