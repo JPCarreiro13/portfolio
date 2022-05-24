@@ -1,0 +1,85 @@
+input,
+textarea {
+    width: 100%;
+    font-family: $font-text;
+    font-size: rem(24px);
+    line-height: rem(32px);
+    background-color: transparent;
+    color: $primary-color-2;
+    border: 1px solid $primary-color-2;
+    border-radius: rem(48px);
+    padding: 0 rem(16px);
+
+    &[type="submit"] {
+        cursor: pointer;
+    }
+
+    &::placeholder {
+        color: $white;
+    }
+
+    &:hover {
+        outline: 1px solid $white;
+        transition: .1s ease;
+
+        &::placeholder {
+            opacity: .5;
+            transition: .1s ease-out;
+        }
+    }
+
+    &:focus {
+        outline: 1px solid $white;
+
+        &::placeholder {
+
+        }
+    }
+}
+
+/* EXCEPTIONS */
+
+#search-input {
+
+    &::-webkit-search-cancel-button {
+        position: absolute;
+        left: $spacing-s; 
+        -webkit-appearance: none;
+        height: 16px;
+        width: 16px;
+        background-image: url("../../assets/images/icons/cancel-search.svg");
+        cursor: pointer;
+    }
+    @media (min-width: $screen-lg) {
+        width: 1;
+        opacity: 1;
+
+        &.search-input-hover{
+            opacity: 1;
+            width: 100%;
+            padding: 0 rem(40px);
+        }
+    }
+}
+
+#discuss {
+    input, textarea {
+        color: $black;
+        transition: .3s ease-out;
+
+        &::placeholder {
+            color: $white;
+        }
+        &:hover,
+        &:focus {
+            
+        }
+
+        &[type="submit"]:hover {
+            background-color: $black;
+            color: $white;
+            transition: .3s ease-out;
+        }
+    }
+}
+

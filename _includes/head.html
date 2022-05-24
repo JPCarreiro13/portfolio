@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta name="description" content="I’m João and I'm a Product Designer and illustrator, based in Lisbon.">
+  <meta name="keywords" content="JPCarreiro, Carreiro, product design, ux/ui design, ux research, digital experience design, graphic design, branding, visual idenity, illustration, wireframe, packaging, editorial">
+  <meta author="João Pedro Carreiro">
+  {%- seo -%}
+  <link rel="stylesheet" href="https://use.typekit.net/mga2bje.css">
+  <link rel="icon" href="./assets/img/jpcarreiro_favicon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/slick/slick.css" | relative_url }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/slick/slick-theme.css" | relative_url }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/style.css" | relative_url }}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+</head>

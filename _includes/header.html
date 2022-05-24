@@ -1,0 +1,25 @@
+<header>
+  <div class="visible-mobile-menu">
+    <button class="burger" aria-label="menu" aria-expanded="false" aria-pressed="false">
+      <span class="burger-line burger-line-1"></span>
+      <span class="burger-line burger-line-2"></span>
+      <span class="burger-line burger-line-3"></span>
+    </button>
+      <a class="logo" href="{{site.baseurl}}/" target="_self">
+        <h3>JPCarreiro<span>.</span></h3>
+      </a>
+  </div>
+  <div class="desktop-menu">
+    <a class="logo" href="{{site.baseurl}}/" target="_self">
+      <h3>JPCarreiro<span>.</span></h3>
+    </a>
+    <nav class="menu"> 
+      <ul class="menu-list"> 
+        {% for menu in site.menus | sort:'order' %}
+          <li class="menu-item menu-item-{{ forloop.index }}"><a href="{{site.baseurl}}/{{menu.slug}}/" target="_self" class="{% if page.url contains menu.slug %}active-menu-item{% endif %}" title="{{menu.title}}"><h4>{{menu.title}}</h4></a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {%- include social.html -%}
+</div>
+</header>

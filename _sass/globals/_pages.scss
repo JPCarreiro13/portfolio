@@ -1,0 +1,18 @@
+body {
+    background-color: $primary-color-1;
+    color: $white;
+}
+
+.page-content {
+
+    .social-media-list {
+        display: none;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: r$spacing-xs;
+            justify-content: end;
+        }
+    }
+}

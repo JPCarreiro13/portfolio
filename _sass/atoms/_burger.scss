@@ -1,0 +1,38 @@
+.burger{
+    display: flex;
+    flex-direction: column;
+    gap: rem(6px);
+    padding: rem(14.5px) rem(12px);
+    width: fit-content;
+    background-color: unset;
+    cursor: pointer;
+    &:hover {
+        background-color: unset;
+        & .burger-line {
+            background-color: $black;
+        }
+    }
+    .burger-line {
+        background-color: $white;
+        width: rem(24px);
+        height: rem(1px);
+        transition: .2s ease;
+        
+        &-1.on {
+            transform: rotate(45deg) translate(5.5px, 5.5px);
+            transition: .2s ease;
+        }
+        &-2.on {
+            transform: rotate(135deg);
+            transition: .6s ease;
+        }
+        &-3.on {
+            transform: rotate(-45deg) translate(5.5px, -5.5px);
+            transition: .4s ease;
+        }
+    }
+
+    @media (min-width: $screen-lg) {
+        display: none;
+    }
+}

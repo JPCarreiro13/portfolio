@@ -1,0 +1,53 @@
+.sm-icon {
+    max-width: rem(24px);
+    max-height: rem(24px);
+}
+.menu-icon {
+    max-width: rem(64px);
+    max-height: rem(64px);
+    width: rem(64px);
+}
+.pm-icon {
+    fill: $white;
+    opacity: .5;
+    &-applepay {
+        max-width: rem(40px);
+        max-height: rem(16px);
+    }
+    &-paypal {
+        max-width: rem(64px);
+        max-height: rem(16px);
+    }
+    &-mbway {
+        max-width: rem(40px);
+        max-height: rem(20px);
+    }
+    &-visa {
+        max-width: rem(48px);
+        max-height: rem(16px);
+    }
+}
+
+svg {
+    fill: $white;
+    transition: .2s ease;
+}
+.btn-icon {
+    transition: .2s ease;
+    
+    &:hover {
+        color: $primary-color-2;
+        transition: .2s ease;
+
+        svg {
+            fill: $primary-color-2;
+            transition: .2s ease;
+        }
+    }
+}
+
+/* SLICK SLIDER */
+
+/* .slick-dots li.slick-active button:before {
+    color: white;
+}*/

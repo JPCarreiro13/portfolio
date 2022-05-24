@@ -1,0 +1,45 @@
+#discuss {
+    background-color: $primary-color-1;
+    padding: $padding-mobile;
+    
+    .container {
+        display: flex;
+        padding-bottom: 64px;
+        flex-direction: column;
+        gap: $spacing-m;
+    
+        label {
+            font-size: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            #nl-email {
+                margin-bottom: $spacing-s;
+            }
+        }
+        a {
+            text-decoration: underline;
+        }
+    }
+    @media (min-width: $screen-sm) {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-flow: column;
+
+            form {
+                grid-row: 1/3;
+            }
+            small {
+                order: -1;
+            }
+        }
+        padding: $padding-tablet;
+    }
+    @media (min-width: $screen-lg) {
+        padding: $padding-desktop;
+    }
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  {%- include head.html -%}
+  <body>
+    {%- include header.html -%}
+    <main class="page-content">
+      {{ content }}
+      {%- include discuss.html -%}
+    </main>
+    {%- include footer.html -%}
+    <!--<script src="{{ "/assets/js/jquery-3.6.0.min.js" | relative_url }}"></script>-->
+    <script src="{{ "/assets/slick/slick.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/scripts.js" | relative_url }}"></script>
+  </body>
+</html>

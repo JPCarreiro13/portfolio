@@ -1,0 +1,91 @@
+p,
+li,
+h1,
+h2 {
+    font-family: $font-text;
+    font-weight: $regular;
+    @include font-text;
+}
+
+h3,
+h4,
+h5 {
+    display: block;
+    font-weight: $bold;
+    @include font-button;
+}
+
+h1 {
+    text-align: center;
+    font-size:18vw;
+    line-height: 20vw;
+}
+
+h2 {
+    font-size: rem(80px);
+    line-height: rem(104px);
+}
+
+h3 {
+    font-size: rem(32px);
+    line-height: rem(48px);
+    padding: rem(12px) rem(8px);
+
+    span {
+        color: $primary-color-2;
+    }
+}
+
+h4 {
+    font-size: rem(24px);
+    line-height: rem(32px);
+}
+
+h5 {
+    font-size: rem(16px);
+    line-height: rem(24px);
+}
+
+p:first-child {
+    font-size: rem(48px);
+    line-height: rem(56px); 
+}
+
+p {
+    font-size: rem(32px);
+    line-height: rem(40px); 
+}
+
+p:nth-last-child(3) {
+    font-size: rem(24px);
+    line-height: rem(32px); 
+}
+
+.project-description p:nth-child(1) {
+    font-size: rem(24px);
+    line-height: rem(32px); 
+}
+
+.intro-title {
+
+    @media (min-width: $screen-xs) {
+        
+    }
+}
+
+.skills-list p {
+    font-size: rem(24px);
+    line-height: rem(32px); 
+}
+
+li {
+    font-size: rem(32px);
+    line-height: rem(40px);
+}
+
+.tag-projects li {
+    font-size: rem(24px);
+    line-height: rem(32px);
+    @include font-button;
+
+}

@@ -1,0 +1,22 @@
+@import "utilities/reset";
+
+@import "utilities/mixins";
+@import "utilities/clears";
+@import "utilities/media-queries";
+@import "utilities/spacings";
+@import "utilities/colors";
+@import "utilities/fonts";
+@import "utilities/text";
+@import "utilities/layouts";
+@import "utilities/animations";
+
+@import "atoms/buttons";
+@import "atoms/icons";
+@import "atoms/inputs";
+@import "atoms/burger";
+
+
+@import "globals/header";
+@import "globals/pages";
+@import "globals/footer";
+@import "globals/banners";

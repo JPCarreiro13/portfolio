@@ -1,0 +1,15 @@
+$font-button: 'roc-grotesk-wide', sans-serif;
+$font-text: 'kepler-std-semicondensed-cap', serif;
+
+$bold: 600;
+$regular: 300;
+
+@mixin font-button {
+    font-family: $font-button;
+    font-weight: 600;
+}
+
+@mixin font-text {
+    font-family: $font-text;
+    font-weight: 300;
+}
