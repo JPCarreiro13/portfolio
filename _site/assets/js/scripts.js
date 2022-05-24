@@ -52,7 +52,6 @@ window.onload = function(){
     });
 
     // BANNER PARALLAX
-
     const parallax = document.querySelector(".banner");
 		window.addEventListener("scroll", function(){
 			let offset = window.pageYOffset;
@@ -75,8 +74,6 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
-// ACCORDION
 
 const items = document.querySelectorAll(".accordion button");
 
