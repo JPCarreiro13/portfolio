@@ -45,7 +45,7 @@ section {
 }
 
 @media (max-width: $screen-xs) {
-  .intro-text,  {
+  .intro-text {
     width: 100%!important;
   }
 }
@@ -231,10 +231,6 @@ section {
         border: 1px solid $white;
       }
     }
-
-    .accordion:hover .icon {
-      
-    }
     
     .accordion-title {
     }
@@ -267,6 +263,11 @@ section {
       }
     }
   }
+
+  button:hover .icon {
+    fill: $black;
+  }
+
   button[aria-expanded='true'] {
     color: $white;
     .icon {
@@ -334,4 +335,24 @@ section {
 .img {
     display: flex;
     justify-content: space-between;
+}
+
+.about-section {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.homepage-about-section-img {
+  flex: 0 0 50%;
+  padding-right: 128px;
+}
+
+.about-info {
+  flex: 0 0 50%;
+}
+
+.about-info button {
+  float: left;
+  margin-top: 48px;
+  display: inherit;
 }
