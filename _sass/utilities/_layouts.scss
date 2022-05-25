@@ -61,7 +61,7 @@ section {
     text-align: left;
 }
 
-.intro {
+.intro-homepage {
     display: flex;
     justify-content: flex-end;
     padding: rem(48px) 0px;
@@ -184,6 +184,23 @@ section {
     color: $white;
     cursor: pointer;
     
+    &:after {
+      content: '';
+      transform: scaleX(0);  
+      transition: transform 250ms ease-in-out;
+      border-bottom: 1px solid $black;
+    }
+    
+    &:hover {
+      transform-origin:  0% 50%;
+      border-bottom: 1px solid $black;
+    }
+}
+
+.btn-link svg{
+  fill: none;
+  position: absolute;
+  margin-left: 8px;
 }
 
 .content {
@@ -297,19 +314,25 @@ section {
     }
 
     .tag-projects {
-      
       width: 50%;
+      padding-top: rem(48px);
 
       ul {
         display: flex;
-        justify-content: space-between;
-        gap: $spacing-xl;
+        justify-content: flex-start;
+        gap: $spacing-m;
       }
     }
 
     .text-projects {
       width: 50%;
+      padding-top: rem(48px);
       padding-left: rem(32px);
+
+      p {
+        font-size: rem(24px);
+        line-height: rem(32px); 
+      }
     }
   }
 }
@@ -321,7 +344,7 @@ section {
   position: absolute;
   top: 64px;
   right: rem(-80px);
-  animation: rotation 120s infinite linear;
+  animation: rotation 30s infinite linear;
 
   @keyframes rotation {
     from {
@@ -355,4 +378,52 @@ section {
   float: left;
   margin-top: 48px;
   display: inherit;
+}
+
+.discuss-box {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.discuss-box div{
+  flex: 0 0 50%;
+}
+
+.col-1 input {
+  margin: 16px 0px;
+}
+
+.col-1 {
+  padding: 0px 32px 0px 0px;
+}
+.col-2 textarea {
+  height: 128px;
+  margin-top: 16px;
+  border-radius: 24px;
+  padding: 8px 16px;
+}
+
+#btn-submit {
+  color: $white;
+  &:hover{
+    color: $black;
+  }
+}
+
+form .button {
+  margin-top: 48px;
+}
+
+.image-intro {
+  width: 100%;
+}
+
+.intro-text-about {
+  padding-top: rem(48px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts-text {
+  width: 50%;
 }

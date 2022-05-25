@@ -2,7 +2,7 @@
 {%- for item in site.data.social -%}
     {%- if item.title == "Instagram" -%}
         <li><a class="btn-icon" href="https://www.instagram.com/{{ site.instagram_username| cgi_escape | escape }}" target="_blank">
-            {{ item.title }}
+            
             <svg class="sm-icon">
                 <use href="#instagram-icon"/>
             </svg>
@@ -11,7 +11,7 @@
 
     {%- if item.title == "Behance" -%}
         <li><a class="btn-icon" href="https://www.behance.net/{{ site.behance_username| cgi_escape | escape }}" target="_blank">
-            {{ item.title }}
+            
             <svg class="sm-icon">
                 <use href="#behance-icon"/>
             </svg>

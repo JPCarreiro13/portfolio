@@ -1,15 +1,7 @@
 <footer> 
   <div class="container"> 
-    <section>
-      <nav> 
-        <ul class="footer-list"> 
-        {% for item in site.data.store-menu %}
-          <li><a href="{{item.link}}" target="_self" title="{{item.title}}" class="footer-item {% if page.url == item.link %}active-footer-item{% endif %}"><h6>{{item.title}}</h6></a></li>
-        {% endfor %}
-        </ul>
-      </nav>
-    </section>
     <section> 
+      <div class="footer-left">
       <span class="footer-title"><p>Thanks for your visit!</p></span>
       <p>You can check out my networks to follow my new adventures!</p>
       <ul class="footer-list footer-list-w-icons"> 
@@ -17,11 +9,13 @@
           {%- include social.html -%}
         </li>
       </ul>
+    </div>
+      <div class="copyrights">
+        <small>
+          &copy; <time>2022</time> {{site.title}} - All rights reserved
+        </small>
+      </div>
     </section>
   </div>
-  <div class="copyrights">
-    <small>
-      &copy; <time>2022</time> {{site.title}} - All rights reserved
-    </small>
-  </div>
+  
 </footer>

@@ -12,6 +12,7 @@
     width: fit-content;
     transition: .1s ease-in-out;
     cursor: pointer;
+    border: none;
     
 
     &:hover{
@@ -60,6 +61,7 @@
     color: $white;
     transition: .1s ease-in-out;
     cursor: pointer;
+    position: relative;
 
     &:hover{
         color: $black;
