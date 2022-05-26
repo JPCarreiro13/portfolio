@@ -18,6 +18,7 @@ input {
 }
 
 section {
+  margin: 80px 0;
     padding: 64px 5%;
   }
   
@@ -159,6 +160,10 @@ section {
     grid-template-columns: 1fr 1fr;
 }
 
+.tools-list li {
+  padding: 4px 0;
+}
+
 .skills-list {
     display: flex;
     align-items: flex-start;
@@ -214,7 +219,7 @@ section {
   }
 }
 
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-sm) {
   .about-section {
     display: block!important;
   }
@@ -230,21 +235,51 @@ section {
   }
 }
 
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-sm) {
   .intro-text-about {
     display: block!important;
   }
 }
 
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-md) {
   .skills-tools {
     display: block!important;
   }
 }
 
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-sm) {
   .contacts-text ul {
-    left: 12%!important;
+    left: 10%!important;
+  }
+}
+
+@media (max-width: $screen-xs) {
+  .hero-img {
+    width: 90%!important;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .collapsible {
+    font-size: 3rem!important;
+    line-height: 3.5rem!important;
+
+  }
+}
+
+@media (max-width: $screen-md) {
+  .accordion button .icon {
+    top: rem(32px)!important;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .tag-projects {
+    width: 100%!important;
+  }
+  .text-projects {
+    width: 100%!important;
+    padding: 48px 0!important;
   }
 }
 
@@ -337,6 +372,10 @@ section {
 
     .image-projects {
       width: 100%;
+    }
+
+    .btn-link {
+      padding-top: rem(48px)!important;
     }
 
     .tag-projects {
@@ -452,6 +491,7 @@ form .button {
 .intro-text-about p:first-child{
   flex: 0 0 50%;
   padding-right: 24px;
+  padding-bottom: rem(48px);
 }
 
 .contacts-text {
@@ -462,7 +502,7 @@ form .button {
 
 .contacts-text ul {
   position: absolute;
-  left: 50%;
+  left: 54%;
 }
 
 .contacts-text li svg {
@@ -479,7 +519,7 @@ footer {
 .social-media-list{
   display: flex;
   gap: 1rem;
-  margin: 48px 0px;
+  margin: 48px 0px 0px;
 }
 
 .footer-title p{

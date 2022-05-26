@@ -54,6 +54,7 @@
 
 
 .btn-link {
+    
     font-family: $font-button;
     font-size: rem(16px);
     line-height: rem(24px);
@@ -62,6 +63,7 @@
     transition: .1s ease-in-out;
     cursor: pointer;
     position: relative;
+    padding-top: 48px;
 
     &:hover{
         color: $black;
