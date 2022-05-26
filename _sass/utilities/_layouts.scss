@@ -171,6 +171,7 @@ section {
     flex-wrap: wrap;
     padding: 0px;
     gap: rem(16px);
+    padding-right: 48px;
 }
 
 .project-1 {
@@ -421,9 +422,41 @@ form .button {
 .intro-text-about {
   padding-top: rem(48px);
   display: flex;
-  flex-wrap: wrap;
+}
+
+.intro-text-about p:first-child{
+  flex: 0 0 50%;
+  padding-right: 24px;
 }
 
 .contacts-text {
-  width: 50%;
+  position: relative;
+  width: 100%;
+  padding: 48px;
+}
+
+.contacts-text ul {
+  position: absolute;
+  left: 50%;
+}
+
+.contacts-text li svg {
+  fill: none;
+  position: absolute;
+  left: -48px;
+  margin-top: 6px;
+}
+
+footer {
+  background-color: $black;
+}
+
+.social-media-list{
+  display: flex;
+  gap: 1rem;
+  margin: 48px 0px;
+}
+
+.footer-title p{
+  margin-bottom: 24px;
 }
