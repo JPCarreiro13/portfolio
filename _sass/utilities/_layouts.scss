@@ -22,7 +22,7 @@ section {
   }
   
 .section-title {
-    margin-top: $spacing-xxxl;
+    
     margin-bottom: $spacing-m;
 
     strong {
@@ -83,12 +83,6 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: $spacing-xxxs;
 
-    @media (min-width: $screen-md) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    @media (min-width: $screen-lg) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
 }
 .thumbnail {
     position: relative;
@@ -141,8 +135,12 @@ section {
 
 .scroll-down {
     position: absolute;
-    bottom: 4rem;
-    left: 10%;
+    bottom: 3rem;
+    left: 5%;
+
+    svg {
+      fill: none;
+    }
   }
   
   .scroll-down a {
@@ -154,10 +152,6 @@ section {
   
   .scroll-down span {
     padding-left: 16px;
-  }
-  
-  .scroll-down svg {
-    fill: $primary-color-2;
   }
   
 .skills-tools {
@@ -211,17 +205,48 @@ section {
     gap: 2rem;
     margin-top: 4rem;
     overflow: hidden;
+  
 }
 
+@media (max-width: $screen-xs) {
+  .content {
+    display: block!important;
+  }
+}
 
+@media (max-width: $screen-xs) {
+  .about-section {
+    display: block!important;
+  }
+}
 
+@media (max-width: $screen-sm) {
+  .discuss-box {
+    display: block!important;
+  }
 
+  .col-1 {
+    padding: inherit!important;
+  }
+}
 
+@media (max-width: $screen-xs) {
+  .intro-text-about {
+    display: block!important;
+  }
+}
 
+@media (max-width: $screen-xs) {
+  .skills-tools {
+    display: block!important;
+  }
+}
 
-
-
-
+@media (max-width: $screen-xs) {
+  .contacts-text ul {
+    left: 12%!important;
+  }
+}
 
 .container {
   margin: 0 auto;
@@ -368,7 +393,7 @@ section {
 
 .homepage-about-section-img {
   flex: 0 0 50%;
-  padding-right: 128px;
+  padding-right: 24px;
 }
 
 .about-info {
@@ -459,4 +484,8 @@ footer {
 
 .footer-title p{
   margin-bottom: 24px;
+}
+
+.copyrights {
+  padding: 0;
 }
