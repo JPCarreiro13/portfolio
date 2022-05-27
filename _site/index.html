@@ -26,9 +26,8 @@
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="https://use.typekit.net/mga2bje.css">
   <link rel="icon" href="./assets/images/icons/favicon/jpcarreiro-favicon.png" type="image/x-icon">
-  <!--<link rel="stylesheet" type="text/css" href="/portfolio/assets/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/slick/slick-theme.css">-->
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/portfolio/feed.xml" title="JPCarreiro." /></head>
+  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/style.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/portfolio/feed.xml" title="JPCarreiro." /></head>
 <body><header>
 <a class="logo" href="/portfolio/" target="_self">
   <h3>JPCarreiro<span>.</span></h3>
@@ -79,52 +78,43 @@
     <div class="section-title">
         <h3>Feature Projects</h3>
     </div>
-    <div class="scrolling-wrapper">
-        <div class="card">
-            <div class="content">
-                <div class="project-title">
-                <h2>Amazon Pets</h2>
-                </div>
-                <div class="project-description">
-                    <p>New strategy to improve the user experience in the Pet Supplies department, making the website simpler, intuitive and accessible through customization that responds more easily to the purchase process.</p>
-                    <a href="https://www.behance.net/gallery/140400537/Amazon-Pet" target="_blank" alt="A laptop with a screen of the page of Amazon Pets with a logo and title on top.">
-                        <button aria-label="Learn more" class="btn-link">
-                            See full research
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 17.0001L17 7.00012" stroke="#FEFFFE" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7 7.00012H17V17.0001" stroke="#FEFFFE" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                    </a>
-                    <div class="feature-project">
-                        <img src="assets/images/thumbnails/amazon-pets.png" style="width:100%" alt="blueblob rotating clockwise">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="content">
-                <div class="project-title">
-                <h2>Fbaul - International Students</h2>
-                </div>
-                <div class="project-description">
-                    <p>Create a platform dedicated to international students that really responds to the needs of this segment and transmit clearly the creative and innovative spirit from Fbaul.</p>
-                    <a href="https://www.behance.net/gallery/139995747/FBAULs-website-redesign-International-students" target="_blank">
-                        <button aria-label="Learn more" class="btn-link">
-                            See full research
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 17.0001L17 7.00012" stroke="#FEFFFE" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7 7.00012H17V17.0001" stroke="#FEFFFE" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </button>
-                    </a>
-                    <div class="feature-project">
-                        <img src="assets/images/thumbnails/fbaul-website-redesign.png" style="width:100%" alt="5 mobile mockups, each with the new pages of the new webpage of FBAUL International Students, with a white background and a yellow and pink circles.">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="content" id="amazon">
+        <h2>Amazon Pets</h2>
+        <p>New strategy to improve the user experience in the Pet Supplies department, making the website simpler, intuitive and accessible through customization that responds more easily to the purchase process.</p>
+        <p></p>
+        <a href="https://www.behance.net/gallery/140400537/Amazon-Pet" class="btn-link" target="_blank" alt="A laptop with a screen of the page of Amazon Pets with a logo and title on top.">
+                See full research
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17.0001L17 7.00012" stroke="#FEFFFE" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 7.00012H17V17.0001" stroke="#FEFFFE" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </a>
     </div>
+    <div class="content" id="fbaul">
+        <h2>Fbaul - International Students</h2>
+        <p>Create a platform dedicated to international students that really responds to the needs of this segment and transmit clearly the creative and innovative spirit from Fbaul.</p>
+        <p></p>
+        <a href="https://www.behance.net/gallery/139995747/FBAULs-website-redesign-International-students" class="btn-link" target="_blank">
+                See full research
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 17.0001L17 7.00012" stroke="#FEFFFE" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 7.00012H17V17.0001" stroke="#FEFFFE" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </a>
+    </div>
+    <!-- slider 2-->
+    <div class="container-slider">
+        <div class="slide slide-1">
+          <div class="slide-bg slide-1-bg"></div>
+          <input id="radio1" type="radio" name="check-buttons" checked="checked">
+          
+          <div class="slide slide-2"> 
+            <div class="slide-bg slide-2-bg"></div>
+            <input id="radio2" type="radio" name="check-buttons">
+          </div><!-- .slide-2 -->
+        </div><!-- .slide-1 -->
+      </div><!-- .container -->
+    <!-- slider 2 end-->
 </section>
 <section class="latest-about">
     <div class="about-section">
@@ -146,9 +136,7 @@
             </div>
         </div>
     </div>
-</section>
-
-<section id="discuss"> 
+</section><section id="discuss"> 
     <div class="container"> 
         <h2>Want to discuss a new project?</h2>
         <form action="" method="post">
@@ -206,7 +194,7 @@
   
 </footer>
 <!--<script src="/portfolio/assets/js/jquery-3.6.0.min.js"></script>-->
-    <script src="/portfolio/assets/slick/slick.min.js"></script>
+    <!--<<script src="/portfolio/assets/slick/slick.min.js"></script>-->
     <script src="/portfolio/assets/js/scripts.js"></script>
   </body>
 </html>

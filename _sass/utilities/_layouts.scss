@@ -722,5 +722,187 @@ footer {
 
   width: 774px;
   height: 512px;
-  
+
+}
+
+// O MEU PROF É MEGA GAY, eu quero é que ele se foda...
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+.container-slider {
+  height: 512px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container-slider > .slide {
+  position: relative !important;
+  left: 0 !important;
+}
+
+.container-slider .slide {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 350px;
+  height: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.slide-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slide-1-bg {
+  background: url('../../assets/images/thumbnails/amazon-pets.png');
+  background-size: cover;
+  width: 774px;
+}
+
+.slide-2-bg {
+  background: url('../../assets/images/thumbnails/fbaul-website-redesign.png');
+  background-size: cover;
+  width: 774px;
+}
+
+.container-slider input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  opacity: 0;
+  z-index: 100;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.container-slider input:checked {
+  width: 5px;
+  left: auto;
+  right: 0;
+}
+
+.container-slider input:checked ~ .slide {
+  left: 835px;
+  transition: all .7s ease-in-out;
+}
+
+.slide span {
+  position: absolute;
+  background: rgba(87, 73, 81, 0.3);
+  line-height: 20px;
+  font-size: 18px;
+  opacity: 0;
+  padding: 20px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all .4s ease-out;
+}
+
+.container-slider input:checked + span {
+  opacity: 1;
+}
+
+.container-slider input:checked ~ .slide input {
+  z-index: 1;
+}
+
+// para cima esta o tirollilo ca em baixo esta o tirolo //
+
+$gridCol: 7.1428571429vw;
+
+*{
+
+  margin: 0;
+  padding: 0;
+
+}
+
+.js-drag-slider {
+
+  width: 100vw;
+
+}
+
+.js-drag-slider-content,
+.js-drag-slider-inner {
+
+  display: flex;
+  white-space: nowrap;
+  flex-wrap: no-wrap;
+
+}
+
+// .drag-slide img,
+.drag-slide {
+  width: $gridCol * 4;
+  display: flex;
+  padding: 0 $gridCol / 2;
+}
+
+.js-drag-slider-content::-webkit-scrollbar {
+    display: none;
+  }
+
+.drag-slide img {
+  width: 100%;
+  display: flex;
+}
+
+.drag-slider figure {
+  width: 100%;
+  display: flex;
+}
+
+.proxy {
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#amazon a, #fbaul a {
+font-family: "roc-grotesk-wide",sans-serif;
+font-size: 1rem;
+line-height: 1.5rem;
+font-weight: 600;
+transition: .1s ease-in-out;
+cursor: pointer;
+position: relative;
+margin-bottom: 32px;
+padding: 0px;
+}
+
+
+@media (max-width: $screen-sm) {
+
+  .container-slider .slide {
+    height: 92%!important;
+  }
+  .slide-1-bg { 
+    background-size: contain!important;
+    width: 200px!important;
+    background-repeat: no-repeat!important;
+  }
+
+  .container-slider {
+    height: 200px!important;
+  }
 }

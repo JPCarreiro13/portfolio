@@ -26,37 +26,8 @@ window.onload = function(){
 
     let control = false;
 
-    searchForm.addEventListener("mouseleave", function() {
-        if (searchInput.value == "" && control == false) {
-            searchInput.classList.remove("search-input-hover");
-            languages.style.display = "flex";
-        }
-    });
 
-    searchInput.addEventListener("focus", function() {
-        control = true;
-    });
-    searchInput.addEventListener("blur", function() {
-        control = false;
-        searchInput.classList.remove("search-input-hover");
-        languages.style.display = "flex";
-    })
-
-    buttonSearch.addEventListener("click", function() {
-        if (searchInput.value!="") {
-
-        }else{
-            searchInput.focus();
-            return false;
-        }
-    });
-
-    // BANNER PARALLAX
-    const parallax = document.querySelector(".banner");
-		window.addEventListener("scroll", function(){
-			let offset = window.pageYOffset;
-			parallax.style.backgroundPositionY = offset * 0.3 + "px";
-		})
+    
 
 }
 
@@ -104,3 +75,16 @@ menu.onclick = () => {
 window.onscroll = () => {
     navbar.classList.remove('active');
 }
+
+jq2 = jQuery.noConflict();
+jq2(function( $ ) {
+  $('#fbaul').hide();
+  $("#radio1").click(function() {
+    $('#fbaul').hide();
+    $('#amazon').show();
+  });
+  $("#radio2").click(function() {
+    $('#fbaul').show();
+    $('#amazon').hide();
+  });
+});

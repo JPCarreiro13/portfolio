@@ -39,29 +39,6 @@ textarea {
 
 /* EXCEPTIONS */
 
-#search-input {
-
-    &::-webkit-search-cancel-button {
-        position: absolute;
-        left: $spacing-s; 
-        -webkit-appearance: none;
-        height: 16px;
-        width: 16px;
-        background-image: url("../../assets/images/icons/cancel-search.svg");
-        cursor: pointer;
-    }
-    @media (min-width: $screen-lg) {
-        width: 1;
-        opacity: 1;
-
-        &.search-input-hover{
-            opacity: 1;
-            width: 100%;
-            padding: 0 rem(40px);
-        }
-    }
-}
-
 #discuss {
     input, textarea {
         color: $black;
