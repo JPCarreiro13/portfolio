@@ -725,7 +725,6 @@ footer {
 
 }
 
-// O MEU PROF É MEGA GAY, eu quero é que ele se foda...
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 
 .container-slider {
@@ -894,7 +893,7 @@ padding: 0px;
 @media (max-width: $screen-sm) {
 
   .container-slider .slide {
-    height: 92%!important;
+    height: 81% !important;
   }
   .slide-1-bg { 
     background-size: contain!important;
@@ -904,5 +903,12 @@ padding: 0px;
 
   .container-slider {
     height: 200px!important;
+  }
+
+  .container-slider input:checked ~ .slide {
+    left: 220px!important;
+  }
+  .slide-2-bg {
+    width: 200px!important;
   }
 }
